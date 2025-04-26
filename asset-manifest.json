@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/story-editor/static/css/main.d474a5e3.css",
+    "main.js": "/story-editor/static/js/main.5dd75421.js",
+    "static/js/453.65e322a8.chunk.js": "/story-editor/static/js/453.65e322a8.chunk.js",
+    "index.html": "/story-editor/index.html",
+    "main.d474a5e3.css.map": "/story-editor/static/css/main.d474a5e3.css.map",
+    "main.5dd75421.js.map": "/story-editor/static/js/main.5dd75421.js.map",
+    "453.65e322a8.chunk.js.map": "/story-editor/static/js/453.65e322a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d474a5e3.css",
+    "static/js/main.5dd75421.js"
+  ]
+}
