@@ -1,0 +1,397 @@
+/* 전체 컨테이너 스타일 */
+.app-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* 헤더 섹션 */
+.app-header {
+  border-bottom: 2px solid #4361ee;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title {
+  color: #4361ee;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.file-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* 버튼 스타일 */
+.primary-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+}
+
+.primary-button.export {
+  background-color: #38b000;
+  margin-left: 1rem;
+}
+
+.secondary-button {
+  padding: 0.5rem 1rem;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.danger-button {
+  padding: 0.5rem 1rem;
+  background-color: #d90429;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.file-input-label {
+  padding: 0.5rem 1rem;
+  background-color: #3a86ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: inline-block;
+  text-align: center;
+}
+
+.file-input {
+  display: none;
+}
+
+.add-button {
+  padding: 0.4rem 0.8rem;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.add-line-button {
+  padding: 0.5rem 1rem;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* 삭제 버튼 */
+.delete-button, .delete-choice-button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  transition: all 0.2s;
+  opacity: 0.8;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.delete-button:hover, .delete-choice-button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.delete-choice-button {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  background-color: #ff758f;
+}
+
+/* 도움말 영역 */
+.shortcuts-info {
+  padding: 0.8rem;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.autosave-info {
+  font-size: 0.8rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* 씬 컨테이너 */
+.scene-container {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.scene-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.8rem;
+}
+
+.scene-name-input {
+  flex: 1;
+  margin-right: 1rem;
+  font-weight: bold;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.scene-name-display {
+  flex: 1;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #212529;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scene-name-display:hover {
+  background-color: #f1f3f5;
+}
+
+.scene-number {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-right: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+
+.collapse-button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  background-color: #f0f2f5;
+  border: 1px solid #dee2e6;
+  color: #4361ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  width: 32px;  /* 고정 너비 설정 */
+  height: 32px; /* 고정 높이 설정 */
+}
+
+.collapse-button:hover {
+  background-color: #e2e6ff;
+  border-color: #4361ee;
+  transform: translateY(-1px);
+}
+
+.collapse-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* 펼치기/접기 아이콘 스타일 */
+.collapse-button .icon {
+  margin-right: 0.2rem;
+  font-weight: bold;
+  flex-shrink: 0; /* 아이콘 크기 유지 */
+}
+
+.scene-content {
+  margin-top: 1rem;
+}
+
+/* 대사 라인 */
+.line-container {
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.line-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.line-number {
+  font-size: 0.8rem;
+  color: #6c757d;
+  background-color: #e9ecef;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.line-inputs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.name-input {
+  width: 20%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.mood-input {
+  width: 15%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.content-input {
+  width: 50%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.func-input {
+  width: 15%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.choices-section {
+  margin-top: 0.8rem;
+}
+
+.no-choice-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.no-choice-checkbox {
+  margin-right: 0.5rem;
+}
+
+.choices-container {
+  margin-top: 0.8rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #4361ee;
+  padding-bottom: 0.5rem;
+}
+
+.choice-row {
+  margin-bottom: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.choice-text-input {
+  width: calc(70% - 25px);
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.choice-func-input {
+  width: calc(30% - 25px);
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+/* 빈 상태 메시지 */
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px dashed #dee2e6;
+  color: #6c757d;
+}
+
+/* 씬 헤더 컨트롤 스타일 */
+.scene-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete-scene-button {
+  background: none;
+  border: none;
+  color: #ff4757;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.delete-scene-button:hover {
+  transform: scale(1.2);
+}
+
+
+
+
